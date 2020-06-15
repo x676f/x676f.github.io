@@ -83,33 +83,26 @@
 
 ## 配置文件
 
-[v2ray] 的配置文件 [/etc/v2ray/config.json](https://github.com/x676f/x676f.github.io/proxy/v2ray/config.json)
-
-```console
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/v2ray/config.json /etc/v2ray/config.json
-```
-
-[ShadowsocksR] 的配置文件 [/etc/shadowsocksr/config.json](https://github.com/x676f/x676f.github.io/proxy/shadowsocksr/config.json)
+下载配置文件，并编辑
 
 ```console
 $ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/shadowsocksr/config.json /etc/shadowsocksr/config.json
+$ sudo nano /etc/shadowsocksr/config.json
+$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/v2ray/config.json /etc/v2ray/config.json
+$ sudo nano /etc/v2ray/config.json
 ```
+
+[ShadowsocksR] 的配置文件 `/etc/shadowsocksr/config.json` 记得改成自己的代理配置
+[v2ray] 的配置文件 `/etc/v2ray/config.json` 第 182 行，换成代理的根域名，以确保由网关通往代理的流量不会死循环在网关本机
 
 
 ## 系统服务
 
 ### 定义
 
-[v2ray] 的系统服务 [/etc/systemd/system/v2ray.service](https://github.com/x676f/x676f.github.io/proxy/service/v2ray.service)
-
-```console
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/service/v2ray.service /etc/systemd/system/v2ray.service
-```
-
-[ShadowsocksR] 的系统服务 [/etc/systemd/system/shadowsocksr.service](https://github.com/x676f/x676f.github.io/proxy/service/shadowsocksr.service)
-
 ```console
 $ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/service/shadowsocksr.service /etc/systemd/system/shadowsocksr.service
+$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/service/v2ray.service /etc/systemd/system/v2ray.service
 ```
 
 ### 启动
