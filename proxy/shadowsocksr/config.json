@@ -1,0 +1,12 @@
+{
+    "server": "your.proxy.domain.or.ip",
+    "server_port": 10000,
+    "method": "chacha20-ietf",
+    "password": "your-password",
+    "protocol": "auth_sha1_v4",
+    "protocol_param": "",
+    "obfs": "http_simple",
+    "obfs_param": "",
+    "local_address": "0.0.0.0",
+    "local_port": 1080
+}

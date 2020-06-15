@@ -1,0 +1,10 @@
+[Unit]
+Description=ShadowsocksR Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/shadowsocksr/shadowsocks/local.py -c /etc/shadowsocksr/config.json
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

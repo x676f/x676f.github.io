@@ -1,1 +1,2 @@
-# x676f.github.io
+# [xLOG](https://x676f.github.io)
+
