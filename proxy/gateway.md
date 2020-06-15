@@ -86,9 +86,10 @@
 下载配置文件，并编辑
 
 ```console
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/shadowsocksr/config.json /etc/shadowsocksr/config.json
+$ sudo wget https://github.com/ToutyRater/V2Ray-SiteDAT/raw/master/geofiles/h2y.dat /usr/bin/v2ray/h2y.dat
+$ sudo wget https://github.com/x676f/x676f.github.io/raw/proxy/shadowsocksr/config.json /etc/shadowsocksr/config.json
 $ sudo nano /etc/shadowsocksr/config.json
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/v2ray/config.json /etc/v2ray/config.json
+$ sudo wget https://github.com/x676f/x676f.github.io/raw//proxy/v2ray/config.json /etc/v2ray/config.json
 $ sudo nano /etc/v2ray/config.json
 ```
 
@@ -101,8 +102,8 @@ $ sudo nano /etc/v2ray/config.json
 ### 定义
 
 ```console
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/service/shadowsocksr.service /etc/systemd/system/shadowsocksr.service
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/service/v2ray.service /etc/systemd/system/v2ray.service
+$ sudo wget https://github.com/x676f/x676f.github.io/raw/proxy/service/shadowsocksr.service /etc/systemd/system/shadowsocksr.service
+$ sudo wget https://github.com/x676f/x676f.github.io/raw/proxy/service/v2ray.service /etc/systemd/system/v2ray.service
 ```
 
 ### 启动
@@ -136,7 +137,7 @@ $ sudo service v2ray restart
 
 ```console
 $ cd ~
-$ wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/bash/tproxy.sh
+$ wget https://github.com/x676f/x676f.github.io/raw/proxy/bash/tproxy.sh
 $ sudo chmod +x ./tproxy.sh
 $ sudo ./tproxy.sh
 ```
@@ -150,7 +151,7 @@ $ sudo iptables-save > /etc/iptables/rules.v4
 确保每次重启时自动载入规则
 
 ```console
-$ sudo wget https://raw.githubusercontent.com/x676f/x676f.github.io/master/proxy/service/shadowsocksr.service /etc/systemd/system/load-iptables.service
+$ sudo wget https://github.com/x676f/x676f.github.io/raw/proxy/service/shadowsocksr.service /etc/systemd/system/load-iptables.service
 $ sudo systemctl enable load-iptables
 ```
 
