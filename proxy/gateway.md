@@ -151,7 +151,7 @@ $ sudo iptables-save > /etc/iptables.v4
 确保每次重启时自动载入规则
 
 ```console
-$ sudo wget https://github.com/x676f/x676f.github.io/raw/proxy/service/shadowsocksr.service /etc/systemd/system/load-iptables.service
+$ sudo wget https://github.com/x676f/x676f.github.io/raw/proxy/service/load-iptables.service /etc/systemd/system/load-iptables.service
 $ sudo systemctl enable load-iptables
 ```
 
