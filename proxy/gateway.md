@@ -50,7 +50,7 @@
 
 ### 使用 v2ray作为枢纽，实现自动分流和网关
 
-[v2ray] 定议 3 个 `inbound` 入口
+[v2ray] 定义 3 个 `inbound` 入口
 
 - [dokodemo-door] 任意门，由 `tproxy` 为网关流量提供服务
 - `socks` 在 1081 端口提供 `socks5 代理` 服务，自动分流
@@ -145,7 +145,7 @@ $ sudo ./tproxy.sh
 保存规则文件
 
 ```console
-$ sudo iptables-save > /etc/iptables/rules.v4
+$ sudo iptables-save > /etc/iptables.v4
 ```
 
 确保每次重启时自动载入规则
